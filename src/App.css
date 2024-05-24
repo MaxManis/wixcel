@@ -1,38 +1,132 @@
-.App {
+body {
+  font-family: sans-serif, "Arial";
+  margin: 0;
+  padding: 0;
+}
+
+main {
+}
+.title {
+}
+.green-text {
+  color: green;
+}
+
+.toolbar {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 4px 0px;
+}
+.nav-bar {
+  border: 1px solid black;
+}
+.navbar-table-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+}
+
+.table-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px);
+}
+.table-modal-content {
+  position: relative;
+  padding: 10px 14px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  width: 70%;
+  height: 70%;
+  overflow-x: hidden;
+}
+
+.table-box {
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f2f2f2;
+  border: 1px solid #2e2e2e;
+}
+
+.cell {
+  display: block;
+  padding: 3px;
+  border: 1px solid #2e2e2e;
+  width: 100px;
+  height: 25px;
+
+  overflow-x: hidden;
+
+  box-sizing: border-box;
+}
+.cell-info {
+  display: block;
+  padding: 3px;
+  border: 1px solid #2e2e2e;
+  width: 40px;
+  height: 25px;
+
+  overflow-x: hidden;
+
+  box-sizing: border-box;
+}
+
+.buttons {
+  padding: 4px;
+  display: flex;
+  gap: 8px;
+}
+
+.button {
+  padding: 4px;
+  color: #fff;
+  background-color: #004d01;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-center {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-right {
+  text-align: right;
+}
+.text-bolt {
+  font-weight: 600;
+}
+.text-italic {
+  font-style: italic;
+}
+.text-underline {
+  text-decoration: underline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.selected-cell-bar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  max-width: 100%;
 }
-
-.App-link {
-  color: #61dafb;
+.selected-cell-key {
+  width: 40px;
+  padding-left: 5px;
+  border-right: 1px solid grey;
+  font-weight: 600;
+  color: grey;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.selected-cell-text {
+  padding-left: 5px;
 }
