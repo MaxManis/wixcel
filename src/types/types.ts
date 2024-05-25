@@ -20,3 +20,18 @@ export type CellProps = {
   cellKey: string;
   data: Map<string, ICell>;
 };
+
+export type TableData = Record<string, ICell>;
+export type TableDataMap = Map<string, ICell>;
+export type TableHeaders = {
+  id: string;
+  name: string;
+  key: string;
+  createdAt: Date;
+  updatedAt: Date;
+  openedAt: Date;
+};
+export type TableDataWithHeaders = {
+  data: TableData;
+  headers: TableHeaders;
+};

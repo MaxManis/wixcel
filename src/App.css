@@ -6,6 +6,9 @@ body {
 
 main {
 }
+.App {
+  padding: 12px 18px;
+}
 .title {
 }
 .green-text {
@@ -14,7 +17,7 @@ main {
 
 .toolbar {
   position: sticky;
-  top: 0;
+  top: -10px;
   background: white;
   padding: 4px 0px;
 }
@@ -43,9 +46,11 @@ main {
   padding: 10px 14px;
   border: 1px solid grey;
   border-radius: 8px;
-  width: 70%;
-  height: 70%;
+  width: 90%;
+  height: 83%;
   overflow-x: hidden;
+
+  background-color: white;
 }
 
 .table-box {
@@ -129,4 +134,77 @@ main {
 }
 .selected-cell-text {
   padding-left: 5px;
+}
+
+.tables-list {
+  padding: 12px 8px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  background-color: white;
+
+  max-width: 80%;
+  min-width: 620px;
+  margin: 0 auto;
+}
+.tables-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.tables-list__item:nth-child(even) {
+  background-color: #f6f6f6;
+}
+.tables-list__item:hover {
+  background-color: lightgrey;
+}
+.tables-list__item-group-1 {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-left: 12px;
+}
+.tables-list__item-group-2 {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.tables-list__table-img {
+  height: 30px;
+}
+.tables-list__info-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 12px;
+}
+.tables-list__info-item-group-1 {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  padding-left: 20px;
+}
+.tables-list__info-item-group-2 {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 156px;
+  padding-right: 126px;
+}
+.tables-list__empty-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: green;
+
+  font-weight: bolt;
+  font-size: 34px;
+
+  padding: 24px 0;
 }

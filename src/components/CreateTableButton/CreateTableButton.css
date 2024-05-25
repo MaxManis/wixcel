@@ -1,0 +1,25 @@
+.create_table_button__button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  background-color: #f6f6f6;
+
+  width: max-content;
+  padding: 16px 6px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+
+  border: 1px solid green;
+  border-radius: 4px;
+
+  -webkit-box-shadow: 4px 4px 5px 1px rgba(19, 145, 7, 0.29);
+  -moz-box-shadow: 4px 4px 5px 1px rgba(19, 145, 7, 0.29);
+  box-shadow: 4px 4px 5px 1px rgba(19, 145, 7, 0.29);
+}
+.create_table_button__plus-img {
+  height: 20px;
+}
+.create_table_button__text {
+  color: green;
+}

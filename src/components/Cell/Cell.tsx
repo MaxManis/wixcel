@@ -16,12 +16,12 @@ import {
 
 export const Cell = memo(function ({ cellKey, data }: CellProps) {
   const [cellDataObj, setCellDataObj] = useState<ICell | undefined>(
-    data.get(cellKey)
+    data.get(cellKey),
   );
 
   const dispatch = useAppDispatch();
   const { selectedCellKey, totalActionsCount } = useAppSelector(
-    (state) => state.cell
+    (state) => state.cell,
   );
 
   const onCellEdit = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -37,7 +37,7 @@ export const Cell = memo(function ({ cellKey, data }: CellProps) {
     const newCellData: ICell = createNewCell(
       newVal,
       cellDataObj?.alignment,
-      cellDataObj?.textStyle
+      cellDataObj?.textStyle,
     );
     setCellDataObj(newCellData);
     data.set(cellKey, newCellData);
